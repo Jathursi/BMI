@@ -59,17 +59,13 @@ function App() {
                           <div className="top">
                               <div className="gender">
                                   <div className="male">
-                                      <input type='radio' placeholder='male'/>
+                                      <input type='radio' name='gender' value='male'/>
                                       <h2>Male</h2>
                                   </div>
                                   <div className="male">
-                                      <input type='radio' placeholder='female'/>
+                                      <input type='radio' name='gender' value='female/>
                                       <h2>Female</h2>
                                   </div>
-                              </div>
-                              <div className="btn">
-                                  <button className='white'>Imperial</button>
-                                  <button className='blue'>Metric</button>
                               </div>
                           </div>
                           <div className="form">
