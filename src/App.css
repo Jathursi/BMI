@@ -249,7 +249,7 @@ input[type="number"]::placeholder {
   
   .wrapper {
     margin-top: 500px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.225);
+    box-shadow: none;
     width: 90%; 
     height: auto;
   }
