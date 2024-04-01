@@ -113,53 +113,7 @@ input[type="number"]::placeholder {
   background-color: #f0f0f0;
   position: relative;
 }
-.bmi-scale .marker {
-  width: 2px;
-  height: 20px;
-  background-color: #000; 
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
 
-.bmi-scale .range {
-  position: absolute;
-  margin-top: 15px;
-  height: 90%;
-  z-index: 0;
-}
-
-.bmi-scale .range.underweight {
-  left: 0;
-  width: 25%;
-  margin-top: 45px;
-  height: 105px;
-  background-color: #ff6347;
-  border-top-left-radius: 100%;
-}
-
-.bmi-scale .range.normal-weight {
-  left: 25%;
-  width: 25%;
-  height: 125px;
-  border-top-left-radius: 100%;
-  margin-top: 25px;
-  margin-right: 20px;
-  background-color: #32cd32;
-}
-
-.bmi-scale .range.overweight {
-  left: 50%;
-  width: 25%;
-  background-color: #ffd700;
-}
-
-.bmi-scale .range.obese {
-  left: 75%;
-  width: 25%;
-  border-top-right-radius: 100%;
-  background-color: #ff4500; 
-}
 .pie-wrap{
   border: 2px solid lightgrey;
   width: 400px;
@@ -180,7 +134,7 @@ input[type="number"]::placeholder {
 .normal-weight{
   top: 0px;
   left: 0;
-  background-color: antiquewhite;
+  background-color: #32cd32;
   height:50%;
   position: absolute;
   width: 50%;
@@ -193,7 +147,7 @@ input[type="number"]::placeholder {
 .underweight{
   left: 0;
   top: 0;
-  background-color: rgb(17, 224, 76);
+  background-color: #ff6347;
   height:50%;
   position: absolute;
   width: 50%;
@@ -204,7 +158,7 @@ input[type="number"]::placeholder {
   margin-right: 190px;
 }
 .overweight{
-  background-color: pink;
+  background-color: #ffd700;
   height:50%;
   position: absolute;
   top: 0px;
@@ -217,7 +171,7 @@ input[type="number"]::placeholder {
   margin-right: 170px;
 }
 .obese{
-  background-color: purple;
+  background-color: #ff4500; 
   height:50%;
   width: 50%;
   right: 0;
@@ -288,3 +242,34 @@ input[type="number"]::placeholder {
       transform: rotate(180deg);
   }
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change to vertical layout */
+  }
+  
+  .wrapper {
+    margin-top: 500px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.225);
+    width: 90%; 
+    height: auto;
+  }
+  .wrap{
+    flex-direction: column;
+  }
+  .calculator{
+    width: 100%;
+  }
+  .btn{
+    margin-right: 150px;
+  }
+  .end_btn{
+    margin-right: 200px;
+  }
+  .subhead{
+    margin-left: 80px;
+  }
+  .small{
+    background-color: #fff;
+  }
+}
+
