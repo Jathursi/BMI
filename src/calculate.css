@@ -1,0 +1,290 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.wrapper{
+    width: 90%;
+    height: 90%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.225);
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
+.display{
+    width: 50%;
+}
+.calculator{
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 50%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.form{
+    margin-bottom: 10px;
+}
+.male{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.gender h2{
+    font-weight: normal;
+}
+.btn{
+    margin-top: 10px;
+    margin-right: 70px;
+}
+.btn button{
+    border: none;
+    outline: none;
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn button:hover{
+    box-shadow: 2px 2px 15px black;
+}
+.white{
+    background-color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.blue{
+    background-color: blue;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.form input{
+    display: flex;
+    height: 40px;
+    width: 250px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 5px rgb(124, 123, 123);
+}
+.form h2{
+    font-weight: normal;
+}
+input[type="number"]::placeholder {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.end_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.end_btn button{
+    background-color: blue;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 150px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.bmi-scale {
+    width: 60%;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  .bmi-scale .marker {
+    width: 2px;
+    height: 20px;
+    background-color: #000; 
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .bmi-scale .range {
+    position: absolute;
+    margin-top: 15px;
+    height: 90%;
+    z-index: 0;
+  }
+  
+  .bmi-scale .range.underweight {
+    left: 0;
+    width: 25%;
+    margin-top: 45px;
+    height: 105px;
+    background-color: #ff6347;
+    border-top-left-radius: 100%;
+  }
+  
+  .bmi-scale .range.normal-weight {
+    left: 25%;
+    width: 25%;
+    height: 125px;
+    border-top-left-radius: 100%;
+    margin-top: 25px;
+    margin-right: 20px;
+    background-color: #32cd32;
+  }
+  
+  .bmi-scale .range.overweight {
+    left: 50%;
+    width: 25%;
+    background-color: #ffd700;
+  }
+  
+  .bmi-scale .range.obese {
+    left: 75%;
+    width: 25%;
+    border-top-right-radius: 100%;
+    background-color: #ff4500; 
+  }
+  .pie-wrap{
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 400px;
+    margin: 10% 50px;
+    position: relative;
+    border-radius: 50% 50% 0 0;
+    border: none;
+    color: black;
+    overflow: hidden;
+}
+.pie-wrap .range{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.normal-weight{
+    top: 0px;
+    left: 0;
+    background-color: antiquewhite;
+    height:50%;
+    position: absolute;
+    width: 50%;
+    clip-path:polygon(100% 0, 100%  100% , 0 0 );
+}
+.normal-weight p{
+    margin-top: -70px;
+    margin-right: 50px;
+}
+.underweight{
+    left: 0;
+    top: 0;
+    background-color: rgb(17, 224, 76);
+    height:50%;
+    position: absolute;
+    width: 50%;
+    clip-path:polygon(0% 0%, 100% 100% , 0% 100% );
+}
+.underweight p{
+    margin-top: 200px;
+    margin-right: 190px;
+}
+.overweight{
+    background-color: pink;
+    height:50%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+.overweight p{
+    margin-top: -170px;
+    margin-right: 170px;
+}
+.obese{
+    background-color: purple;
+    height:50%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    clip-path:polygon(0% 100%, 100% 100%, 100% 0%);
+}
+.obese p{
+    margin-top: -30px;
+    margin-left: 90px;
+}
+.small{
+    height: 100px;
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: 1;
+    overflow: hidden;
+}
+.small .marker {
+    width: 200px; /* Adjust marker width */
+    height: 3px; /* Adjust marker height */
+    background-color: red; /* Adjust marker color */
+    position: absolute;
+    top: 98%;
+    z-index: 2;
+    background: #000;
+    transform-origin: center;
+    /* transform-origin: 50% 80%; */
+    /* transform: translate(-50%, -50%) rotate(calc(45deg + 180deg)); */
+}
+.cir{
+    height: 20px;
+    width: 20px;
+    margin-top: 87px;
+    margin-left: 90px;
+    background-color: #000;
+    border: 3px solid black;
+    border-radius: 50%;
+    z-index: 3;
+}
+.triangel{
+    height: 10px;
+    width: 20px;
+    border: 3px solid black;
+    background-color: #000;
+    margin-left: -5px;
+    clip-path:polygon(100% 0, 100%  100% , 0 0 );
+}
+.triangel2{
+    height: 10px;
+    width: 20px;
+    border: 2px solid black;
+    background-color: #000;
+    margin-top: -25px;
+    margin-left: -3px;
+    clip-path:polygon(0% 100%, 100% 100%, 100% 0%);
+}
+@keyframes circularMotion {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}

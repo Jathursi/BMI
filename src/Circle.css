@@ -1,0 +1,100 @@
+.pie-wrap{
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 400px;
+    margin: 10% 50px;
+    position: relative;
+    border-radius: 50% 50% 0 0;
+    border: none;
+    color: black;
+    overflow: hidden;
+}
+.pie-wrap .range{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.normal-weight{
+    top: 0px;
+    left: 0;
+    background-color: antiquewhite;
+    height:50%;
+    position: absolute;
+    width: 50%;
+    clip-path:polygon(100% 0, 100%  100% , 0 0 );
+}
+.normal-weight p{
+    margin-top: -70px;
+    margin-right: 50px;
+}
+.underweight{
+    left: 0;
+    top: 0;
+    background-color: rgb(17, 224, 76);
+    height:50%;
+    position: absolute;
+    width: 50%;
+    clip-path:polygon(0% 0%, 100% 100% , 0% 100% );
+}
+.underweight p{
+    margin-top: 200px;
+    margin-right: 190px;
+}
+.overweight{
+    background-color: pink;
+    height:50%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+.overweight p{
+    margin-top: -170px;
+    margin-right: 170px;
+}
+.obese{
+    background-color: purple;
+    height:50%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    clip-path:polygon(0% 100%, 100% 100%, 100% 0%);
+}
+.obese p{
+    margin-top: -30px;
+    margin-left: 90px;
+}
+.small{
+    height: 100px;
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+.small .marker {
+    width: 130px;
+    height: 3px;
+    margin-top: 100px;
+    margin-left: -30px;
+    background-color: #000; 
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    animation: moveMarker 5s linear infinite;
+  }
+  @keyframes moveMarker {
+    0% {
+        transform: rotate(-135deg); /* Start position: rotate counter-clockwise */
+    }
+    100% {
+        transform: rotate(45deg); /* End position: rotate clockwise */
+    }
+}
